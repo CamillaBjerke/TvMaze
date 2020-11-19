@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace backend
+namespace backend.models
 {
-    public partial class Show
+    public partial class TvMazeSeries
     {
         public int Id { get; set; }
         public Uri Url { get; set; }
@@ -25,6 +25,12 @@ namespace backend
         public string Summary { get; set; }
         public long Updated { get; set; }
         public Links Links { get; set; }
+        public Embedded _Embedded { get; set; }
+    }
+
+    public partial class Embedded
+    {
+        public IReadOnlyList<TvMazeEpisode> Episodes { get; set; }
     }
 
     public partial class Externals
@@ -75,4 +81,5 @@ namespace backend
         public string Time { get; set; }
         public List<string> Days { get; set; }
     }
+    
 }

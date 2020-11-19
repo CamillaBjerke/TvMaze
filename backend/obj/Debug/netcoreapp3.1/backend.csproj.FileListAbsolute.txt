@@ -80,4 +80,4 @@ C:\repo\Kandidat\tvmaze\backend\bin\Debug\netcoreapp3.1\backend.pdb
 C:\repo\Kandidat\tvmaze\backend\obj\Debug\netcoreapp3.1\backend.dll
 C:\repo\Kandidat\tvmaze\backend\obj\Debug\netcoreapp3.1\backend.pdb
 C:\repo\Kandidat\tvmaze\backend\obj\Debug\netcoreapp3.1\backend.genruntimeconfig.cache
-c:\repo\Kandidat\tvmaze\backend\bin\Debug\netcoreapp3.1\test.json
+c:\repo\Kandidat\tvmaze\backend\bin\Debug\netcoreapp3.1\assets\test.json

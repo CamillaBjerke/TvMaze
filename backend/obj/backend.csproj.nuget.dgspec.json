@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\repo\\Kandidat\\tvmaze\\backend\\backend.csproj": {}
+    "C:\\repo\\Kandidat\\tvmaze\\backend\\backend.csproj": {}
   },
   "projects": {
-    "c:\\repo\\Kandidat\\tvmaze\\backend\\backend.csproj": {
+    "C:\\repo\\Kandidat\\tvmaze\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\repo\\Kandidat\\tvmaze\\backend\\backend.csproj",
+        "projectUniqueName": "C:\\repo\\Kandidat\\tvmaze\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "c:\\repo\\Kandidat\\tvmaze\\backend\\backend.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "c:\\repo\\Kandidat\\tvmaze\\backend\\obj\\",
+        "projectPath": "C:\\repo\\Kandidat\\tvmaze\\backend\\backend.csproj",
+        "packagesPath": "C:\\Users\\cand\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\Kandidat\\tvmaze\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

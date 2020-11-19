@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-
+using backend.models;
 
 namespace backend
 {
@@ -11,9 +11,9 @@ namespace backend
     public class TvMazeAPIController : ControllerBase
     {
         [HttpGet]
-        public async Task<List<Show>> Get() 
+        public async Task<List<TvMazeSeries>> Get() 
         {
-            List<Show> lstAllShows = await TvMAze.GetAllShowsInFile();
+            List<TvMazeSeries> lstAllShows = await TvMAze.GetAllShowsInFile();
             return lstAllShows;
         }
 

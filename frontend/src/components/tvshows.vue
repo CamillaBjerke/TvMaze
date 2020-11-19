@@ -1,36 +1,42 @@
 <template>
   <div class="TvShows">
-    <h1 class="uff">TvShows</h1>
-    <div class= "ille">
-    
-    <!--{{ results.data[0].id }}-->
-    
-    <table>
-        <tr>
-            <th>Navn</th>
-            <th>Summary</th>
-        </tr>
-        <tr v-for="res in results.data" :key="res.Id">
-            <td>{{ res.name }}</td>
-            <td>{{ res.summary }}</td>
-        </tr>
-    </table>
+    <h1>Serier</h1>
+<b-card-group deck>
+<b-card-group deck v-for="res in results.data" :key="res.Id">
+  <b-card
+    :header="res.name"
+    :img-src="res.image.medium"
+    :img-alt="res.name"
+    :img-width="80"
+    img-top
+    style="max-width: 15rem;"
+    class="mb-3"
+  >
+    <b-card-text>
+      <div>{{res.type}}</div>
+<!--       <div v-for="item in res.genres" :key="item">
+          <span>{{ item }}</span>
+      </div> -->
+      <div><span v-html="res.summary"></span></div>
+    </b-card-text>
+    <div slot="footer">
+<!--       <div><font-awesome-icon icon="thumbs-up" /></div> -->
+      <div>
+        <font-awesome-icon icon="star" /> 
+        {{ res.rating.average }}
+        </div>
     </div>
-  </div>
+     <small class="text-muted">
+      </small>
+  </b-card>
+</b-card-group>
+</b-card-group>
+    </div>
 </template>
 
-<style lang="scss">
-.uff {
-  background-color: aquamarine;
-}
-
-.ille {
-  background-color: pink;
-}
-</style>
 
 <script>
-import api from '@/TvMazeApiService'
+import api from '@/TvMazeApiService';
 
 export default {
   name: 'Tvshows',
@@ -40,7 +46,11 @@ export default {
     }
   },
   async created(){
-      this.results = await api.getAll()
+      this.results = await api.getAll();
   }
 }
 </script>
+
+<style lang="scss">
+
+</style>

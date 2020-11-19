@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "@/components/home";
 import TvShows from "@/components/tvshows";
+import Reports from "@/components/reports";
 
 
 Vue.use(Router);
@@ -10,13 +10,13 @@ let router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/tvshows',
       name: 'tvshows',
       component: TvShows
+    },
+    {
+      path: '/reports',
+      name: 'reports',
+      component: Reports
     }
   ]
 });

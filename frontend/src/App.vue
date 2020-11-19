@@ -7,10 +7,10 @@
         <b-collapse is-nav id="nav-collapse">
           <b-navbar-nav> 
             <b-nav-item>
-              <router-link class="nav-link" to="/tvshows">
-                TvShows
+              <router-link class="nav-link" to="/reports">
+                Rapporter
               </router-link>             
-              </b-nav-item>
+            </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
