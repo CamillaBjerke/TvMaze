@@ -38,16 +38,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #e3eef9;
+
 }
 
 #nav {
   padding: 30px; 
+  color: #e3eef9;
 }
 
 a {
     font-weight: bold;
     color: #e3eef9;
+    cursor: pointer;
 }
 
 </style>

@@ -9,7 +9,7 @@
                         <div>Denne viser deg de 10 seriene som har best rating</div>
                     </b-card-text>
                     <div slot="footer">
-                        <b-button href="#" variant="primary">Last ned</b-button>
+                        <b-button href="#" variant="info">Last ned</b-button>
                     </div>
                 </b-card>
                 
@@ -18,7 +18,7 @@
                         <div>Denne viser sammendrag av seriene</div>
                     </b-card-text>
                     <div slot="footer">
-                        <b-button href="#" variant="primary">Last ned</b-button>
+                        <b-button href="#" variant="info">Last ned</b-button>
                     </div>
                 </b-card>
             </b-card-group>
@@ -31,6 +31,14 @@
 </script>
 
 <style lang="scss">
-
+.card{
+    .btn-info {
+        font-size: 16px;
+        font-weight: 600;;
+        color: #112f52;
+        background-color: #ffffff;
+        border-color: #e2e9f1;
+    }
+}
 </style>
 
