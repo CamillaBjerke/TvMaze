@@ -1,10 +1,10 @@
-1. rating: 8,9 One-Punch Man
-2. rating: 8,7 Better Call Saul
-3. rating: 8,7 Banshee Origins
-4. rating: 8,6 MINDHUNTER
-5. rating: 8,6 Zac & Mia
-6. rating: 8,5 Janet King
-7. rating: 8,4 Blue Bloods
-8. rating: 8,3 True Detective
-9. rating: 8,3 The Simpsons
-10. rating: 8,3 Dark Matter
+8,9;One-Punch Man
+8,7;Better Call Saul
+8,7;Banshee Origins
+8,6;MINDHUNTER
+8,6;Zac & Mia
+8,5;Janet King
+8,4;Blue Bloods
+8,3;True Detective
+8,3;The Simpsons
+8,3;Dark Matter

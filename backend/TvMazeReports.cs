@@ -13,7 +13,6 @@ namespace backend
         {
             string fileName = @"reports\Top10.txt";
             string showLine;
-            int i = 1;
 
             List<String> lstTop10ToReport = new List<string>();
 
@@ -22,9 +21,8 @@ namespace backend
 
             foreach (TvMazeSeries s in lstAllShowes)
             {
-                showLine = i + ". rating: " + s.Rating.Average +  " " + s.Name;
+                showLine = s.Rating.Average +  ";" + s.Name;
                 lstTop10ToReport.Add(showLine);
-                i++;
             }
             createTextFileFromList(fileName, lstTop10ToReport);
         }
@@ -38,13 +36,15 @@ namespace backend
 
             foreach (TvMazeSeries s in lstAllShowes)
             {
-                showLine = s.Name + ";" + s.Network + ";" + s.Genres.ToString() + ";" + s._Embedded.Episodes.Count + ";"; // + s.Name; Finne ut hvem som er released
+                if(s.Network!=null)
+                    showLine = s.Name + ";" + s.Network.Name + ";" + s.Genres.ToString() + ";" + s._Embedded.Episodes.Count + ";"; 
+                else
+                    showLine = s.Name + ";" + s.Genres.ToString() + ";" + s._Embedded.Episodes.Count + ";"; 
                 lstSummaryToReport.Add(showLine);
                 i++;
             }
             createTextFileFromList(fileName, lstSummaryToReport);
         }
-
 
         private static void createTextFileFromList(string fileName, List<String> lstToFile) 
         {
