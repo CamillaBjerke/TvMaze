@@ -1,11 +1,16 @@
 <template>
   <div id="app">
      <header>
-      <b-navbar toggleable="md" type="light" variant="light">
+      <b-navbar>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-navbar-brand to="/">TvMaze</b-navbar-brand>
         <b-collapse is-nav id="nav-collapse">
           <b-navbar-nav> 
+            <b-nav-item>
+              <router-link class="nav-link" to="/">
+                Serier
+              </router-link>             
+            </b-nav-item>
             <b-nav-item>
               <router-link class="nav-link" to="/reports">
                 Rapporter
@@ -33,15 +38,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #e3eef9;
 }
 
 #nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-  }
+  padding: 30px; 
 }
+
+a {
+    font-weight: bold;
+    color: #e3eef9;
+}
+
 </style>

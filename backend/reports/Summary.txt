@@ -26,7 +26,7 @@ Taken;NBC;System.Collections.Generic.List`1[System.String];26;
 Supergirl;The CW;System.Collections.Generic.List`1[System.String];106;
 Designated Survivor;System.Collections.Generic.List`1[System.String];53;
 True Detective;HBO;System.Collections.Generic.List`1[System.String];24;
-Blue Bloods;CBS;System.Collections.Generic.List`1[System.String];219;
+Blue Bloods;CBS;System.Collections.Generic.List`1[System.String];220;
 The Good Doctor;ABC;System.Collections.Generic.List`1[System.String];61;
 The Alienist;TNT;System.Collections.Generic.List`1[System.String];18;
 One Dollar;System.Collections.Generic.List`1[System.String];10;

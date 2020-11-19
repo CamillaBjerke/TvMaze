@@ -4,7 +4,7 @@
 8,6;MINDHUNTER
 8,6;Zac & Mia
 8,5;Janet King
-8,4;Blue Bloods
 8,3;True Detective
+8,3;Blue Bloods
 8,3;The Simpsons
 8,3;Dark Matter

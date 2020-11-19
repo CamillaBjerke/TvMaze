@@ -14,9 +14,17 @@
             class="mb-3"
           >
             <b-card-text>
-              <div>{{res.type}}</div>
-              <div><span v-html="res.summary"></span></div>
-            </b-card-text>
+              <p>Type: {{res.type}}</p>
+              <p>Språk: {{res.language}}</p>
+            <div v-if="isSummary">
+              {{res.summary | truncate(150, '...')}}
+              <a v-if="res.summary.length> 150" @click="toggle()">Les mer</a>
+            </div>
+            <div v-else>
+              {{ res.summary | truncate(1500, '...')}}
+              <a @click="toggle()">Les mindre</a>
+            </div>
+             </b-card-text>
             <div slot="footer">
               <div>
                 <font-awesome-icon icon="star" /> 
@@ -38,27 +46,22 @@ import api from '@/TvMazeApiService';
 
 export default {
   name: 'Tvshows',
-  data() {
+  data() {      
       return{
-            results: []
-    }
+            results: [],
+            isSummary: true
+      }
   },
   async created(){
       this.results = await api.getAll();
+  },
+  methods:{
+        toggle() {
+        this.isSummary = !this.isSummary;
+      }
   }
 }
 </script>
 
 <style lang="scss">
-  .content{ 
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-  }
-    .mycard{
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
 </style>
