@@ -9,7 +9,7 @@
                         <div>Denne viser deg de 10 seriene som har best rating</div>
                     </b-card-text>
                     <div slot="footer">
-                        <b-button href="#" variant="info">Last ned</b-button>
+                        <b-button variant="info">Last ned</b-button>
                     </div>
                 </b-card>
                 
@@ -28,6 +28,16 @@
 </template>
 
 <script>
+
+export default {
+  name: 'Reports',
+  data() {      
+      return{
+          file:[]
+      }
+  }
+}
+
 </script>
 
 <style lang="scss">

@@ -6,7 +6,6 @@ const client = axios.create({
    json: true
 })
 
-
 export default {
     getAll() {
         return client.get('/')

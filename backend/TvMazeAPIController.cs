@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using backend.models;
+using System.Net.Http;
+using System.IO;
+using System.Net;
+using System.Reflection;
 
 namespace backend
 {
@@ -16,11 +20,5 @@ namespace backend
             List<TvMazeSeries> lstAllShows = await TvMAze.GetAllShowsInFile();
             return lstAllShows;
         }
-
-        [HttpGet("{id}")]
-        public string Get(int Id) {
-            return "Denne er parameterstyrt";
-                
-        }       
     }
 }

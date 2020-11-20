@@ -55,6 +55,17 @@ label{
     font-size: 18px;
 }
 
+.btn-info:hover, .btn-info:active, .btn-info:visited, .btn-info:focus {
+    color: #fff;
+    background-color: #385d86;
+    border-color: #385d86;
+}
+
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
+    color: #fff;
+    background-color: #385d86;
+    border-color: #385d86;
+}
 
 .content{ 
     margin: auto;
