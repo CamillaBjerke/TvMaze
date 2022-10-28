@@ -5,7 +5,7 @@ namespace backend.models
 {
     public partial class TvMazeSeries
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public Uri Url { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
@@ -23,7 +23,7 @@ namespace backend.models
         public Externals Externals { get; set; }
         public Image Image { get; set; }
         public string Summary { get; set; }
-        public long Updated { get; set; }
+        public long? Updated { get; set; }
         public Links Links { get; set; }
         public Embedded _Embedded { get; set; }
     }
@@ -59,7 +59,7 @@ namespace backend.models
 
     public partial class Network
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Name { get; set; }
         public Country Country { get; set; }
     }

@@ -48,7 +48,7 @@ namespace backend
 
         static async Task<TvMazeSeries> GetShowAsync(string path, string showeName)
         {
-            string responseAsString;
+            string responseAsString = "";
             TvMazeSeries show = null;
 
             HttpResponseMessage response = await _client.GetAsync(path + showeName + "&embed=episodes");

@@ -1,10 +1,10 @@
-8,9;One-Punch Man
-8,7;Better Call Saul
-8,7;Banshee Origins
-8,6;MINDHUNTER
-8,6;Zac & Mia
-8,5;Janet King
-8,3;True Detective
-8,3;Blue Bloods
-8,3;The Simpsons
-8,3;Dark Matter
+8,6;Better Call Saul
+8,5;One-Punch Man
+8,4;Dark Matter
+8,4;MINDHUNTER
+8,2;Yellowstone
+8,2;True Detective
+8,2;Blue Bloods
+8,2;Janet King
+8,2;VICE
+8,2;Taskmaster
